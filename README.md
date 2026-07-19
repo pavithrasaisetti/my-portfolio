@@ -23,7 +23,10 @@ The Portfolio Website is built to present personal and professional details in a
 - 🌐 **Social Links** – Connect to LinkedIn, GitHub, and more
 
 ---
+## URL :
+https://pavithrasaisetti.github.io/my-portfolio/index.html
 
+---
 ## 🛠 TECHNOLOGIES USED:
 
 - **HTML** – Page structure
