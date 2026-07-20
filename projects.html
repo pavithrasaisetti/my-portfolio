@@ -16,7 +16,10 @@
             color: #1a2161;
             text-align: center;
         }
-
+        h2{
+            font-size:32px;
+            margin-bottom:40px;
+        }
         nav {
             width: 100%;
             background: rgba(255, 255, 255, 0.2); 
@@ -82,7 +85,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             padding: 20px;
         }
@@ -94,14 +97,15 @@
             text-align: center;
             transition: transform 0.3s ease-in-out;
         }
+        .project-card img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            min-height: 250px;
+        }
 
         .project-card:hover {
             transform: scale(1.05);
-        }
-
-        .project-card img {
-            width: 100%;
-            border-radius: 8px;
         }
 
         .project-card h3 {
@@ -148,11 +152,13 @@
     </header>
 
     <section class="projects-section">
-        <h2>_______Projects_______</h2>
-
+        <h2>💻 Featured Projects</h2>
+        <p class="subtitle">
+            A showcase of my work in web development, machine learning, and software engineering.
+        </p>
         <div class="filter-buttons">
             <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="project">PROJECT</button>
+            <button class="filter-btn" data-filter="project">SOFTWARE</button>
             <button class="filter-btn" data-filter="web-app">WEB-APP</button>
         </div>
 
@@ -169,7 +175,7 @@
 
             <div class="project-card" data-category="project">
                 <img src="images/socialmedia.jpg" alt="Social Media Platform">
-                <h3>Social Media Platform</h3>
+                <h3>Mern Social Media Platform</h3>
                 <p>Built with React & Node.js, improving user engagement by 25%.</p>
                 <div class="project-links">
                     <a href="https://github.com/pavithrasaisetti/Social-Media-Platform" target="_blank" class="github-link">GitHub</a>
@@ -179,7 +185,7 @@
 
             <div class="project-card" data-category="web-app">
                 <img src="images/todo.png" alt="To-Do List">
-                <h3>TO-Do List</h3>
+                <h3>Task Management System</h3>
                 <p>Task management app with React & Node.js.</p>
                 <div class="project-links">
                     <a href="https://github.com/pavithrasaisetti/TODOLIST" target="_blank" class="github-link">GitHub</a>
@@ -189,8 +195,9 @@
 
             <div class="project-card" data-category="web-app">
                 <img src="images/weather.jpg" alt="Weather Forecast">
-                <h3>Weather Forecast</h3>
+                <h3>Real-Time Weather Application</h3>
                 <p>Java Full Stack application for real-time weather updates.</p>
+                
                 <div class="project-links">
                     <a href="https://github.com/pavithrasaisetti/weather-forecast/" target="_blank" class="github-link">GitHub</a>
                     <a href="https://pavithrasaisetti.github.io/weather-forecast/" target="_blank" class="live-link">Run</a>
@@ -199,11 +206,11 @@
 
             <div class="project-card" data-category="web-app">
                 <img src="images/portofolio.jpg" alt="My Portfolio">
-                <h3>My Portfolio</h3>
+                <h3>My Personal Portfolio</h3>
                 <p>Personal website built with HTML, CSS, and JavaScript.</p>
                 <div class="project-links">
-                    <a href="https://github.com/pavithrasaisetti/my-portofolio/" target="_blank" class="github-link">GitHub</a>
-                    <a href="https://pavithrasaisetti.github.io/my-portofolio/" target="_blank" class="live-link">Run</a>
+                    <a href="https://github.com/pavithrasaisetti/my-portfolio/" target="_blank" class="github-link">GitHub</a>
+                    <a href="https://pavithrasaisetti.github.io/my-portfolio/" target="_blank" class="live-link">Run</a>
                 </div>
             </div>
 
