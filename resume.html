@@ -5,8 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+
+.resume-container{
+    margin-top:120px;
+    padding-bottom:80px;
+    text-align:center;
+}
+
+        .resume-container h2{
+            font-size:35px;
+            color:#1a1a2e;
+            margin-bottom:30px;
+        }
+
+        .resume-card{
+            width:550px;
+            margin:auto;
+            padding:35px;
+            border-radius:20px;
+            background:rgba(255,255,255,0.2);
+            backdrop-filter:blur(10px);
+            box-shadow:0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .resume-icon{
+            font-size:90px;
+            margin-bottom:15px;
+        }
+
+        .resume-card p{
+            font-size:18px;
+            line-height:1.6;
+            color:#30475e;
+        }
+
+        .resume-buttons{
+            margin-top:30px;
+        }
+
+        .btn{
+            text-decoration:none;
+            padding:12px 25px;
+            margin:10px;
+            border-radius:10px;
+            background:#30475e;
+            color:white;
+            font-size:16px;
+            transition:0.3s;
+            display:inline-block;
+        }
+
+        .btn:hover{
+            background:#1E3A8A;
+            transform:translateY(-2px);
+        }
+
+        .last-updated{
+            margin-top:25px;
+            font-style:italic;
+            color:#555;
+        }
+
+        @media(max-width:768px){
+            .resume-card{
+                width:85%;
+            }
+
+            .resume-container h2{
+                font-size:36px;
+            }
+        }
+    </style>
 </head>
-<body id="resume-page"> 
+
+<body id="resume-page">
+
     <header>
         <nav>
             <ul>
@@ -22,12 +98,48 @@
     </header>
 
     <section class="resume-container">
-        <h2>_______Resume_______</h2>
-        <p>Click the link below to view or download my resume:</p>
-        <p><a href="https://drive.google.com/file/d/1lenagDCz2EPGGCPZr6iKu7osX_MtPBta/view?usp=sharing" target="_blank">Resume</a></p>
-    </section>
 
-    
+        <h2>📄 Resume</h2>
+
+        <div class="resume-card">
+
+            <div class="resume-icon">👩‍💻</div>
+
+            <p>
+                My resume highlights my academic achievements,
+                technical skills, certifications, and software
+                development projects. It reflects my journey as a
+                Computer Science graduate with interests in
+                Artificial Intelligence and Web Development.
+            </p>
+
+            <div class="resume-buttons">
+
+                <a href="https://drive.google.com/file/d/1K518wyLoZhvBdXwVU7r36CAdiQ2C23th/view?usp=sharing"
+                   target="_blank"
+                   class="btn">
+                    View Resume
+                </a>
+
+                <a href="https://drive.google.com/uc?export=download&id=1K518wyLoZhvBdXwVU7r36CAdiQ2C23th"
+                   class="btn">
+                    Download Resume
+                </a>
+
+            </div>
+            <div class="resume-stats">
+                <p>🎓 B.Tech CSE Graduate</p>
+                <p>💻 7+ Projects Completed</p>
+                <p>🏆 CGPA: 9.46 / 10</p>
+                <p>📜 5 certifications Certified</p>
+            </div>
+            <p class="last-updated">
+                Last Updated: July 2026
+            </p>
+
+        </div>
+
+    </section>
 
 </body>
 </html>
