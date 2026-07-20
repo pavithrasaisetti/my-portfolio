@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: url('images/image.png') no-repeat center center fixed;
@@ -201,14 +201,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+
 .profile-links {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 10px;
 }
 
-.profile-links a {
-    transition: transform 0.2s ease, color 0.2s ease;
+.profile-links a{
+    width:150px;
+    text-align:center;
+    text-decoration:none;
+    color:#1a1a2e;
 }
 
 .profile-links a:hover {
@@ -243,12 +248,14 @@ nav ul li a:hover {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+
+
 /* Layout for about section */
 .about-content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    gap: 50px;
     max-width: 1000px;
     margin: auto;
     padding: 40px 20px;
@@ -259,11 +266,13 @@ nav ul li a:hover {
 .about-box {
     flex: 1;
 }
-
+.text-box {
+    flex: 2;
+}
 /* Keep image smaller */
 .image-box {
-    max-width: 300px;
-    flex: 0 0 300px;
+    max-width: 250px;
+    flex: 0 0 250px;
 }
 
 /* Image styling */
@@ -284,6 +293,17 @@ nav ul li a:hover {
     text-align: left; /* CHANGED: Left-align text */
 }
 
+.about-text h3{
+    text-align: left;
+    color: #30475e;
+    margin-top: 20px;
+}
+
+.about-text hr{
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
 .about-details {
     list-style: none;
     padding: 0;
@@ -295,6 +315,11 @@ nav ul li a:hover {
 .about-details li {
     margin-bottom: 8px;
 }
+
+.about-container h2{
+            font-size:32px;
+            margin-bottom:40px;
+        }
 
 /* Responsive: stack boxes on small screens */
 @media (max-width: 768px) {
@@ -320,4 +345,4 @@ nav ul li a:hover {
     .about-details {
         text-align: center; /* CHANGED: Center-align on small screens */
     }
-}
+} 
