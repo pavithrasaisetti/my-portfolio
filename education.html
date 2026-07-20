@@ -5,104 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
+
         .education-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            max-width: 1300px;
+            margin: auto;
             flex-wrap: wrap;
-        }
-        .education-left, .education-right {
-            width: 45%;
         }
 
         .education-item {
-            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
-            transition: transform 0.2s ease-in-out;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            min-height: 450px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
         }
+        .education-item p{
+            font-size:16px;
+            color:#444;
+        }
+
         .education-item:hover {
-            transform: scale(1.02);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
+        .college-logo{
+        height:80px;
+        width:auto;
+        }
 
-        .college-logo {
-            width: 180px;
-            display: block;
-            margin-bottom: 10px;
+        h2 {
+            margin-top: 120px;
+            margin-bottom: 40px;
+            font-size: 32px;
         }
         
-
         h3 {
-            color: #1E3A8A; /* Royal Blue */
+            color: #233876;
+            margin: 15px 0;
+        }
+
+        h4 {
+            color: #30475e;
+            margin-top: 20px;
         }
 
         p strong {
-            color: #3F51B5; /* Slate Blue */
+            color: #3F51B5;
         }
 
         .coursework p {
-            color: #008080; /* Teal */
+            color: #0F766E;
+            margin: 8px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            .education-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .education-item {
+                width: 90%;
+            }
         }
 
     </style>
 </head>
-<body id="education-page"> 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html" class="active">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section>
-        <h2 style="margin-top: 80px;">_______Education_______</h2>
+<body id="education-page">
 
-        <div class="education-container">
-            <div class="education-left">
-                <div class="education-item">
-                    <img src="images/kl-university-logo.png" alt="KL University Logo" class="college-logo">
-                    <p style="text-align: left; font-style: italic; font-weight: normal;">B.Tech. in Computer Science and Engineering</p>
-                    <h3>KL Deemed to be University - Guntur, Andhra Pradesh, India</h3>
-                    <p><strong>August 2022 - April 2026</strong></p>
-                    <h4>Relevant Coursework</h4>
-                    <div class="coursework">
-                        <p>Computer Science Engineering</p>
-                        <p>Python Development</p>
-                        <p>Machine Learning</p>
-                        <p>Web Development</p>
-                    </div>
-                </div>
-                <div class="education-item">
-                    <img src="images/sri-chaitanya-logo.jpg" alt="Sri Chaitanya School Logo" class="college-logo">
-                    <p style="text-align: left; font-style: italic; font-weight: normal;">Primary Studies</p>
-                    <h3>Sri Chaitanya Techno High School - Rajahmundry, India</h3>
-                    
-                    <p><strong>Level:</strong> SSC</p>
-                    <p><strong>June 2019-April 2020</strong></p>
-                </div>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html" class="active">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+
+    <h2>🎓 Education</h2>
+
+    <div class="education-container">
+
+        <!-- KL University -->
+        <div class="education-item">
+
+            <img src="images/kl-university-logo.png"
+                 alt="KL University Logo"
+                 class="college-logo">
+
+            <p><em>Bachelors of Technology (CSE)</em></p>
+
+            <h3>KL Deemed to be University</h3>
+
+            <p>Guntur, Andhra Pradesh, India</p>
+
+            <p><strong>August 2022 - April 2026</strong></p>
+
+            <p><strong>CGPA:</strong> 9.46/10</p>
+
+            <h4>Key Areas</h4>
+
+            <div class="coursework">
+                <p>Artificial Intelligence</p>
+                <p>Machine Learning</p>
+                <p>Web Development</p>
+                <p>Python Programming</p>
             </div>
-            
-            <div class="education-right">
-                <div class="education-item">
-                    <img src="images/tirumala-logo.png" alt="Tirumala College Logo" class="college-logo">
-                    <p style="text-align: left; font-style: italic; font-weight: normal;">Intermediate in MPC Course</p>
-                    <h3>Tirumala Junior Mahila Kalasala - Rajahmundry, India</h3>
-                    <p><strong>June 2020-April 2022</strong></p>
-                    <h4>Relevant Coursework</h4>
-                    <div class="coursework">
-                        <p>Mathematics</p>
-                        <p>English(First Language)</p>
-                        <p>IIT Training</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
-    </section>
+
+        <!-- Tirumala -->
+        <div class="education-item">
+
+            <img src="images/tirumala.png"
+                 alt="Tirumala Logo"
+                 class="college-logo">
+
+            <p><em>Intermediate (MPC)</em></p>
+
+            <h3>Tirumala Junior College</h3>
+
+            <p>Rajahmundry, Andhra Pradesh, India</p>
+
+            <p><strong>June 2020 - April 2022</strong></p>
+
+            <p><strong>Percentage:</strong> 92%</p>
+
+            <h4>Highlights</h4>
+
+            <div class="coursework">
+                <p>Mathematics</p>
+                <p>Physics</p>
+                <p>Chemistry</p>
+                <p>IIT Foundation Training</p>
+            </div>
+
+        </div>
+
+        <!-- SSC -->
+        <div class="education-item">
+
+            <img src="images/sri-chaitanya.png"
+                 alt="Sri Chaitanya Logo"
+                 class="college-logo">
+
+            <p><em>Secondary School Certificate (SSC)</em></p>
+
+            <h3>Sri Chaitanya Techno School</h3>
+
+            <p>Rajahmundry, Andhra Pradesh, India</p>
+
+            <p><strong>June 2019 - April 2020</strong></p>
+            <p><strong>Percentage:</strong> 98% </p>
+            <h4>Highlights</h4>
+
+            <div class="coursework">
+                <p>Academic Excellence</p>
+                <p>Strong Foundation in Science</p>
+                <p>Leadership & Discipline</p>
+                <p>Consistency & Dedication</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 </body>
 </html>
