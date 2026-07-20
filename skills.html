@@ -4,32 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Devicon Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <style>
+
+        .skills-section{
+            max-width:1100px;
+            margin:auto;
+            padding-top:120px;
+        }
+
+        .skills-section h2{
+            font-size:32px;
+            margin-bottom:40px;
+        }
+
+        .skills-container{
+            display:flex;
+            gap:30px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .skill-card{
+            width:300px;
+            padding:25px;
+            border-radius:16px;
+            background:rgba(255,255,255,0.2);
+            backdrop-filter:blur(10px);
+            box-shadow:0 4px 20px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .skill-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .skill-card h3{
+            color:#1E3A8A;
+            margin-bottom:25px;
+        }
+
+        .skills-grid{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+        }
+
+        .skill{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            width:80px;
+        }
+
+        .skill i{
+            font-size:50px;
+            margin-bottom:8px;
+        }
+
+        .skill p{
+            margin:0;
+            font-size:14px;
+            color:#30475e;
+            font-weight:600;
+        }
+
+        @media(max-width:768px){
+            .skills-container{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+
+        .skills-footer{
+            margin-top:40px;
+            font-size:18px;
+            color:#1E3A8A;
+            font-style:italic;
+        }
+
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html" class="active">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section>
-        <h2>_______Skills & Technologies_______</h2>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <img src="images/tools.png" alt="Tools" class="skills-image">
-        <img src="images/frameworks.png" alt="Tools" class="skills-image">
-        <img src="images/languages.png" alt="Tools" class="skills-image">
+<section class="skills-section">
 
+    <h2>🛠️ Skills & Technologies</h2>
 
-        
-    
+    <div class="skills-container">
+
+        <!-- Languages -->
+        <div class="skill-card">
+
+            <h3>💻 Languages & Databases</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <i class="devicon-java-plain colored"></i>
+                    <p>Java</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-python-plain colored"></i>
+                    <p>Python</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-html5-plain colored"></i>
+                    <p>HTML</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-css3-plain colored"></i>
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-mysql-original colored"></i>
+                    <p>MySQL</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-card">
+
+            <h3>🚀 Frameworks & Libraries</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <i class="devicon-react-original colored"></i>
+                    <p>React</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-pandas-original colored"></i>
+                    <p>Pandas</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-scikitlearn-plain colored"></i>
+                    <p>Scikit</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-matplotlib-plain colored"></i>
+                    <p>Matplotlib</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+
+            <h3>⚡ Development Tools</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <i class="devicon-vscode-plain colored"></i>
+                    <p>VS Code</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-github-original"></i>
+                    <p>GitHub</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-jupyter-plain colored"></i>
+                    <p>Jupyter</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-googlecloud-plain colored"></i>
+                    <p>GCP</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-eclipse-plain colored"></i>
+                    <p>Eclipse</p>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-pycharm-plain colored"></i>
+                    <p>PyCharm</p>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Certifications -->
+<div class="skill-card">
+
+    <h3>🏅 Certifications</h3>
+
+    <div class="skills-grid">
+
+        <div class="skill">
+            <p style="font-size:40px;">📜</p>
+            <p>ServiceNow CSA</p>
+        </div>
+
+        <div class="skill">
+            <p style="font-size:40px;">📜</p>
+            <p>ServiceNow CAD</p>
+        </div>
+
+        <div class="skill">
+            <p style="font-size:40px;">🤖</p>
+            <p>RPA</p>
+        </div>
+
+        <div class="skill">
+            <p style="font-size:40px;">☁️</p>
+            <p>Salesforce</p>
+        </div>
+
+        <div class="skill">
+            <p style="font-size:40px;">🐧</p>
+            <p>Red Hat</p>
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+                    <p class="skills-footer">
+                    Always eager to learn and explore emerging technologies.
+                </p>
+</section>
+
 </body>
 </html>
