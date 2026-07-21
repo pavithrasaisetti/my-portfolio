@@ -319,8 +319,7 @@ nav ul li a:hover {
             font-size:32px;
             margin-bottom:40px;
         }
-
-/* Responsive: stack boxes on small screens */@media (max-width:768px){
+@media (max-width:768px){
 
     /* Navigation */
     nav ul{
@@ -352,6 +351,9 @@ nav ul li a:hover {
     /* About Page */
     .about-container{
         padding-top:120px;
+    }
+    .section-title{
+        margin-top:60px;
     }
 
     .about-content{
