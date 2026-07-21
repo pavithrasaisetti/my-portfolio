@@ -320,47 +320,22 @@ nav ul li a:hover {
             margin-bottom:40px;
         }
 
-/* Responsive: stack boxes on small screens */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+/* Responsive: stack boxes on small screens */@media (max-width:768px){
 
-    .image-box {
-        flex: 1 1 100%;
-        max-width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .text-box {
-        flex: 1 1 100%;
-        max-width: 90%;
-        text-align: center;
-    }
-
-    .about-text p,
-    .about-details {
-        text-align: center; /* CHANGED: Center-align on small screens */
-    }
-.about-container{
-    padding-top:120px;
-}
-} 
-@media (max-width:768px){
-
+    /* Navigation */
     nav ul{
         overflow-x:auto;
         white-space:nowrap;
         justify-content:flex-start;
         padding:10px;
+        gap:15px;
     }
 
     nav ul::-webkit-scrollbar{
         display:none;
     }
 
+    /* Home Page */
     .container{
         height:auto;
         padding-top:120px;
@@ -374,24 +349,48 @@ nav ul li a:hover {
         font-size:18px;
     }
 
-    .about-content,
-    .contact-row{
-        flex-direction:column;
-        align-items:center;
+    /* About Page */
+    .about-container{
+        padding-top:120px;
     }
 
-    .card-style,
-    .contact-card{
-        width:90%;
-        max-width:350px;
+    .about-content{
+        flex-direction:column;
+        align-items:center;
+        flex-wrap:wrap;
     }
 
     .image-box{
+        flex:1 1 100%;
         max-width:200px;
+        margin-bottom:20px;
+    }
+
+    .text-box{
+        flex:1 1 100%;
+        max-width:90%;
+        text-align:center;
     }
 
     .about-text p,
     .about-details{
         text-align:center;
+    }
+
+    /* Contact Page */
+    .contact-row{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contact-card{
+        width:90%;
+        max-width:350px;
+    }
+
+    /* Cards */
+    .card-style{
+        width:90%;
+        max-width:350px;
     }
 }
