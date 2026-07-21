@@ -344,13 +344,21 @@ nav ul li a:hover {
     .about-details {
         text-align: center; /* CHANGED: Center-align on small screens */
     }
+.about-container{
+    padding-top:120px;
+}
 } 
 @media (max-width:768px){
 
     nav ul{
-        flex-wrap:wrap;
-        gap:10px;
+        overflow-x:auto;
+        white-space:nowrap;
+        justify-content:flex-start;
         padding:10px;
+    }
+
+    nav ul::-webkit-scrollbar{
+        display:none;
     }
 
     .container{
