@@ -134,10 +134,22 @@
         .live-link {
             background-color: #16A085;
         }
-@media(max-width:768px){
-    .project-container{
+@media (max-width:768px){
+
+    .projects-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .project-card{
+        width:90%;
+        max-width:300px;
+    }
+
+    .projects-grid{
         grid-template-columns:1fr;
     }
+
 }
     </style>
 </head>
